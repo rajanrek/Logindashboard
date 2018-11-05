@@ -1,0 +1,87 @@
+<!-- <h1><a class="dsbrd" routerLink ="/sidebar"> Go To Dashboard</a></h1> -->
+
+
+<div class="container">
+  <!-- <Div class="card-body-p4"> -->
+  <div class="signinBox">
+    <h2>Login</h2>
+    <form #userForm="ngForm">
+      <!-- (ngSubmit)="submitform(userForm.value)" novalidate -->
+
+      <div class="form-group">
+        <label>Signin to your account</label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+
+            </span>
+          </div>
+          <input type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+            required #email="ngModel" [class.is-invalid]="email.invalid && email.touched" class="form-control "
+            [(ngModel)]="usersModels.email" placeholder="email@example.com">
+        </div>
+        <small class="text-danger" [class.d-none]="email.valid || email.untouched">Valid Email is Required</small>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            </span>
+          </div>
+          <input type="password" name="password" pattern="(?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*"
+            required #password="ngModel" [class.is-invalid]="password.invalid && password.touched" class="form-control "
+            [(ngModel)]="usersModels.password" placeholder="Password">
+        </div>
+        <!-- <small class="text-danger" [class.d-none]="password.valid || password.untouched">password is required</small> -->
+        <div *ngIf="password.errors && (password.invalid || password.touched)">
+          <small class="text-danger" [class.d-none]="password.valid || password.untouched">password is required</small>
+          <small class="text-danger" *ngIf="password.errors.pattern"> min one lower case letter, one upper case letter,
+            1 special character, one digit, 6-13 length</small>
+        </div>
+      </div>
+      <!-- <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+            < <label class="form-check-label" for="dropdownCheck">
+              Remember me
+            </label> -->
+      <!-- </div> -->
+      <button id="signIn"  [disabled]="!userForm.form.valid" class="btn btn-primary" type="submit" (click)="onsubmit"
+        routerLink="/sidebar">Sign in</button>
+
+      <a id="fgt1"  routerLink="/forgetpass">Forgot password?</a>
+      <div class="newu">
+        <hr>
+        <a id="ruser" class="shadow p-2 mb-5 bg-white rounded" routerLink="/signup">New User? SignUp</a>
+      </div>
+    </form>
+
+  </div>
+  
+
+
+  </div>
+
+
+
+
+
+<!-- </Div> -->
+
+<!-- <div class="card-body">
+     
+      <div class="card2" style="width: 15rem;">
+          <div class="card-body">
+
+            <h2 class="card-title">SignUp</h2>
+            <p class="card-text">Sign up
+                Lorem ipsum dolortempor ipisicing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.</p>
+                <div id="sgn" class="dropdown-divider"></div>
+                <a href="#" class="btn btn-primary"  routerLink="/signup" >Register Now!!</a>
+          </div>
+        </div>
+     
+    </div> -->

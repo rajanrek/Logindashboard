@@ -1,0 +1,96 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand">
+    <img src="assets/favicon.ico" alt="brandname">
+  </a>
+  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/Dashboard">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Dashboard">User</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Dashboard">Settings</a>
+      </li>
+
+
+
+      <form id="searcharea" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+    </ul>
+  </div>
+
+  <a class="nav-link" id="mess">
+    <!-- <i class="icon-envelope-letter">
+           
+          </i><br> -->
+
+
+    <i class="fa fa-envelope-o" aria-hidden="true"><span class="badge badge-pill badge-info">7</span></i>
+    <!-- <i class="fa fa-meetup" aria-hidden="true"></i> -->
+  </a>
+
+
+  <div appCusdirectv class="btn-group">
+    <img appCusdirectv src="assets/profile1.jpg" height="35px" width="35px" id="krist" alt="profilesimg" class="dropdown-toggle"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="dropdown-menu dropdown-menu-right">
+      <button class="dropdown-item" type="button" outerLink="/sidebar">Account</button>
+      <button class="dropdown-item" type="button" outerLink="/sidebar">Settings</button>
+      <button class="dropdown-item" type="button" routerLink="/signin">Log Out</button>
+    </div>
+  </div>
+
+
+  <!-- <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span> -->
+
+</nav>
+
+<div class="sidenav" #openSide>
+
+
+  <a routerLink="/sidebar/home">Dashboard</a>
+  <a routerLink="/sidebar/client">Clients</a>
+  <a routerLink="/sidebar/contact">Contact</a>
+  
+  <a routerLink="/sidebar/about">About</a>
+
+</div>
+
+<div id="main" #pushArea>
+  <div class="panelNav">
+    <div class="btn-group" dropdown>
+      <!-- <div id="button-basic" dropdownToggle
+                  aria-controls="dropdown-basic">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div> -->
+
+    </div>
+    <!-- <div id="mainContentArea">
+            <div class="articleBox">
+              <h2>Card 1</h2>
+              <article>
+                  <div class="card">
+                      <img appCusdirectv class="card-img-top" src="download.png" alt="Card image cap">
+                     
+                    </div>  
+
+                </article>
+            </div>
+        
+          </div> -->
+
+  </div>
+
+  <router-outlet></router-outlet>

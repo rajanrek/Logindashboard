@@ -1,0 +1,99 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    /* margin-top: 5%; */
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 20;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sideNavTitle{
+    text-align: center;
+}
+#krist{
+    /* border: 2px solid black; */
+    border-radius: 200%;
+}
+
+
+.btn-group{
+    left: -15px;
+   
+}
+
+.card-header{
+    background-color: #2E363A;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eaf3f5;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 60;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.btn-link{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eaf3f5;
+    display: block;
+    transition: 0.3s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav[_ngcontent-c1]{
+    background-color: #2E363A;
+    color: #f1f1f1;
+    left: 10;
+    
+} 
+.card{
+    width: 40%;
+  
+   
+}
+
+.card-body{
+    background-color: #2E363A;
+}
+.navbar-brand{
+    color: #ac13db;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 203px;
+    width: 100%;
+}
+
+
+
+
+/*-----------------------------------------------------*/
+
+

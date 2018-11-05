@@ -1,0 +1,13 @@
+<form>
+  <label for="exampleDropdownFormEmail1">Email address</label>
+  <input type="email" name ="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required #email="ngModel" [class.is-invalid]="email.invalid && email.touched" 
+  class="form-control " [(ngModel)]="forgetmodel.email" placeholder="email@example.com" >
+  <small class="text-danger" [class.d-none]="email.valid || email.untouched">Valid Email is Required</small>
+  <div>
+      <button id="btn22"  type="submit" class="btn btn-success" (click)="onclick()" >Submit</button>
+      <button id="btn23" type="back" class="btn btn-primary" routerLink="/signin">Back</button>
+
+  </div>
+          
+
+        </form>

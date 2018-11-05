@@ -1,0 +1,97 @@
+
+@media (min-width: 576px){
+
+
+.container{
+    width: 400px;
+    margin-top: 15%;
+    margin-left: 35%;
+    position: absolute; 
+    background-color: #FFFFFF;
+      /* transform: translate(-50%, -50%);  */
+    padding: 40px;
+    border: 1px  solid #a0c7d4;
+    padding-bottom: 20px;
+}
+
+.form-group{
+    padding-top: 10px;
+}
+.newu{
+    text-align: center;
+  
+}
+.setup{
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    /* left: 70%; */
+    top: 258px;;
+    /* transform: translate(-50%, -50%); */
+    padding: 30px;
+  
+    margin-left: 54%;
+    /* border: 1px #dfdfdf solid;
+    text-align: center;*/
+}
+
+#ruser{
+    color: rgb(55, 192, 128);
+  
+}
+
+
+#signIn{
+    margin-top: 5px ;
+    background-color: #20A8D8;
+    border: 1px solid #20A8D8;
+  
+    
+    
+}
+.dropdown-divider{
+    margin-top: 10px;
+}
+#signUp{
+   margin:0 60px; 
+   margin-top: 30px;
+   text-align: center;
+}
+.dropdown-item{
+    text-align: center;
+}
+label{
+    color: gray;
+}
+/* .card-body{
+    background-color:#20A8D8 ;
+    width: 20%;
+    height: 43%;
+    position: absolute;
+    left: 61%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    margin:20px;
+    /* margin-left: 66%; */
+    /* border: 1px #dfdfdf solid;
+    text-align: center;
+
+    border: 1px solid gray;
+} */ 
+
+#sgn{
+    margin-top: 120px;;
+} 
+
+#fgt1{
+    margin-top: 15%;
+    padding: 10px;
+    margin-left: 25%;
+    color: #15b7ed
+}
+
+
+
+
+}
