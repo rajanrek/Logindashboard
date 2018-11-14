@@ -1,5 +1,16 @@
-#carouselExampleIndicators{
-    margin: -15%;
-
-
+@media (min-width: 1200px)
+{
+.images{
+    margin-left: 50px;
+}
+.carousel-control-next {
+    right: 25%;
+}
+.carousel-control-prev {
+    left: 15%;
+}
+.w-50 {
+    width: 70%;
+    margin-left: 20%;
+}
 }

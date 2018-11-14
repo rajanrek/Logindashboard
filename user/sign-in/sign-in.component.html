@@ -1,12 +1,12 @@
-<!-- <h1><a class="dsbrd" routerLink ="/sidebar"> Go To Dashboard</a></h1> -->
+
 
 
 <div class="container">
-  <!-- <Div class="card-body-p4"> -->
+
   <div class="signinBox">
     <h2>Login</h2>
     <form #userForm="ngForm">
-      <!-- (ngSubmit)="submitform(userForm.value)" novalidate -->
+  
 
       <div class="form-group">
         <label>Signin to your account</label>
@@ -48,10 +48,10 @@
               Remember me
             </label> -->
       <!-- </div> -->
-      <button id="signIn"  [disabled]="!userForm.form.valid" class="btn btn-primary" type="submit" (click)="onsubmit"
-        routerLink="/sidebar">Sign in</button>
+      <button id="signIn" [disabled]="!userForm.form.valid" class="btn btn-primary" type="submit" (click)="onsubmit"
+        routerLink="/sidebar/home">Sign in</button>
 
-      <a id="fgt1"  routerLink="/forgetpass">Forgot password?</a>
+      <a id="fgt1" routerLink="/forgetpass">Forgot password?</a>
       <div class="newu">
         <hr>
         <a id="ruser" class="shadow p-2 mb-5 bg-white rounded" routerLink="/signup">New User? SignUp</a>
@@ -59,10 +59,10 @@
     </form>
 
   </div>
-  
 
 
-  </div>
+
+</div>
 
 
 
