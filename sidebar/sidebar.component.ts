@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,7 +8,12 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @ViewChild('openSide') side: ElementRef;
   @ViewChild('pushArea') push: ElementRef;
-  toggle = true;
+
+  @Input() public parentData;
+
+  panelOpenState = false;
+
+  public toggle = true;
   constructor() { }
 
   ngOnInit() {

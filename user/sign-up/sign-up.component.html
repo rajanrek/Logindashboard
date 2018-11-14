@@ -1,5 +1,5 @@
-<div class="container-fluid ">
-  <div class="card-body p-4">
+<div class="container ">
+  <div class="card-body">
     <h1>Register</h1>
     <form #userForm="ngForm" (ngSubmit)="submitform(userForm.value)" novalidate>
 
@@ -90,28 +90,28 @@
       </div>
 
       <button id="btn" [disabled]="!userForm.form.valid" type="submit" class="btn btn-success" (click)="onSubmit"
-        routerLink="/sidebar">Register</button>
+        routerLink="/sidebar/home">Register</button>
 
     </form>
     <div class="item" >
         <a  class="shadow p-1 mb-5 bg-white rounded" routerLink="/signin">Already User? Login</a>
     </div>
-    
+    <hr>
+    <div class="row">
+  <div class="col-6">
+      <button class="btn btn-block btn-facebook" type="button" id="fb">
+          <span>facebook</span>
+        </button>
   </div>
-  <hr>
-  <div class="row">
-<div class="col-6">
-    <button class="btn btn-block btn-facebook" type="button" id="fb">
-        <span>facebook</span>
-      </button>
-</div>
-    <div class="col-6">
-        <button class="btn btn-block btn-twitter" id="tw" type="button">
-            <span>twitter</span>
-          </button>
-      
+      <div class="col-6">
+          <button class="btn btn-block btn-twitter" id="tw" type="button">
+              <span>twitter</span>
+            </button>
+        
+      </div>
+     
     </div>
-   
   </div>
+
 
 </div>
